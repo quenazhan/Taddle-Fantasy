@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taddle Fantasy — Official Game Website</title>
+<meta name="description" content="Taddle Fantasy is a 2D action-adventure RPG.">
+
+<!-- FONT: kalau tukar font, tukar nama di sini DAN di style.css (--font-head / --font-body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- WARNA: ubah di style.css (bahagian :root paling atas) -->
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!--
+  CARA EDIT:
+  - Tukar teks  : tukar terus tulisan antara tag, contoh <h2>The Story</h2>
+  - Tukar gambar: tukar nama dalam src="....jpg"  (gambar mesti dalam folder yang sama dengan fail ini)
+  - Buang bahagian: padam dari baris "MULA: ..." sampai "TAMAT: ..." (sebab semua bahagian berdiri sendiri)
+  - Jangan padam bahagian <script> di paling bawah
+-->
+<!-- ===== MULA: MENU ATAS ===== -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><img src="Gambar/logotitle.png" alt=""></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Download / Contact</a></li>
+    </ul>
+  </div>
+</header>
+<!-- ===== TAMAT: MENU ATAS ===== -->
+
+<main>
+
+<!-- ===== MULA: HERO (banner besar) ===== -->
+<section class="hero">
+  <!-- Gambar banner kau (cadangan 1920x1080). Tukar nama fail di sini: -->
+  <img class="hero-bg" src="Gambar/hero banner.png" alt="">
+
+  <div class="container hero-inner">
+    <!-- MULA: logo atas banner (padam baris ni kalau banner kau dah ada logo) -->
+    <img class="hero-logo" src="logo.png" alt="Taddle Fantasy logo" onerror="this.style.display='none'">
+    <!-- TAMAT: logo -->
+    </div>
+    </div>
+    </div>
+    <div class="hero-actions">
+      <a href="contact.html#download" class="btn btn-primary">▶ Play Now</a>
+      <a href="gallery.html#trailer" class="btn btn-primary">Watch Trailer</a>
+    </div>
+  </div>
+</section>
+<!-- ===== TAMAT: HERO ===== -->
+
+
+<!-- ===== MULA: CERITA ===== -->
+<section class="section">
+  <div class="container split">
+    <div class="reveal">
+      <div class="ph"><img src="Gambar/synopsis.jpeg" alt="Story image"></div>   <!-- gambar cerita (nisbah 4:3) -->
+    </div>
+    <div class="reveal">
+      <h2>The Story</h2>
+      <div class="divider" style="margin-left:0"></div><br>
+      <p>In a world where light and darkness once existed in harmony, an ancient crystal begins to shatter, threatening the fate of <strong>Aetheria</strong>. Join <strong>Sora</strong>, a young knight with an ordinary dream, alongside <strong>Eiko</strong>, a brilliant mage, and <strong>Rin</strong>, a gentle healer, as they journey through enchanted forests, frozen mountains, and forgotten kingdoms.</p>
+<p>Uncover the truth behind <strong>Yami</strong>, the feared Demon Lord, and discover that the greatest darkness may hide a forgotten promise. With friendship, courage, and a little hope, even the smallest step can lead to a brighter tomorrow.</p>
+      <div class="meta">
+        <span class="chip">2D Action RPG</span>
+        <span class="chip">Hand-drawn Art</span>
+        <span class="chip">Single Player</span>
+        <span class="chip">PC &amp; Mobile</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== TAMAT: CERITA ===== -->
+
+
+<!-- ===== MULA: FEATURES ===== -->
+<section class="section alt-band">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Game Features</h2>
+      <div class="divider"></div>
+      <p>Taddle Fantasy is a 2D pixel-art action RPG that takes players on an exciting journey through a magical fantasy world. Explore breathtaking regions, discover powerful abilities, team up with unique heroes, and battle dangerous enemies to protect the kingdom from darkness</p>
+    </div>
+    <div class="grid-3">
+      <article class="feature reveal"><div class="icon">🗺️</div><h3>Explore Fantasia</h3><p>Discover four beautifully designed pixel-art environments, each filled with distinctive landscapes, mysterious locations, and exciting challenges.</p></article>
+      <article class="feature reveal"><div class="icon">⚔️</div><h3>Action-Packed Combat</h3><p>Experience thrilling real-time battles using powerful sword attacks, magical spells, and unique character abilities to defeat enemies.</p></article>
+      <article class="feature reveal"><div class="icon">👥</div><h3>Unique Playable Heroes</h3><p>Join Sora, Eiko, and Rin on an unforgettable adventure. Each hero has a unique combat role, special abilities, and strengths.</p></article>
+    </div>
+  </div>
+</section>
+<!-- ===== TAMAT: FEATURES ===== -->
+
+
+<!-- ===== MULA: AJAKAN (CTA) ===== -->
+<section class="section cta-band">
+  <div class="container reveal">
+    <h2>Ready to Light the Way?</h2>
+    <p>Check the system requirements and grab the demo today.</p>
+    <a href="contact.html#download" class="btn btn-primary">Pre-Order Now</a>
+  </div>
+</section>
+<!-- ===== TAMAT: AJAKAN (CTA) ===== -->
+
+</main>
+
+<!-- ===== MULA: FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Download / Contact</a></li>
+    </ul>
+    <small>© 2026 Q'Studio. All rights reserved.</small>
+  </div>
+</footer>
+<!-- ===== TAMAT: FOOTER ===== -->
+
+<script>
+/* ----- JANGAN PADAM: skrip asas (menu mobile, placeholder gambar, animasi) ----- */
+(function () {
+  var t = document.querySelector('.nav-toggle'), n = document.querySelector('.nav-links');
+  if (t && n) t.addEventListener('click', function () { t.setAttribute('aria-expanded', n.classList.toggle('open')); });
+
+  document.querySelectorAll('.ph').forEach(function (box) {
+    var im = box.querySelector('img');
+    if (im && !box.dataset.label) box.dataset.label = im.getAttribute('src') || '';
+    if (im) {
+      var hide = function () { im.style.display = 'none'; };
+      im.addEventListener('error', hide);
+      if (im.complete && im.naturalWidth === 0) hide();
+    }
+  });
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); } });
+    }, { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('show'); });
+  }
+})();
+
+var lastFocus = null;
+function openModal(el) { lastFocus = document.activeElement; el.classList.add('open'); document.body.style.overflow = 'hidden'; var x = el.querySelector('.modal-close'); if (x) x.focus(); }
+function closeModal(el) { el.classList.remove('open'); document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); }
+function wireModals() {
+  document.querySelectorAll('.modal').forEach(function (m) {
+    m.addEventListener('click', function (e) { if (e.target === m) closeModal(m); });
+    var x = m.querySelector('.modal-close'); if (x) x.addEventListener('click', function () { closeModal(m); });
+  });
+  document.addEventListener('keydown', function (e) {
+    var o = document.querySelector('.modal.open'); if (!o) return;
+    if (e.key === 'Escape') closeModal(o);
+  });
+}
+function imgBox(src, alt) {
+  return '<div class="ph" data-label="' + src + '"><img src="' + src + '" alt="' + alt + '" onerror="this.style.display=\'none\'"></div>';
+}
+</script>
+
+<!-- ===== MULA: MUZIK LATAR ===== -->
+<!-- Tukar "music.mp3" kepada nama fail muzik kau (letak fail tu dalam folder yang sama dengan fail html) -->
+<audio id="bgm" src="music.mp3" loop preload="auto"></audio>
+<button id="bgmBtn" class="music-btn" aria-label="Toggle music">🔇</button>
+<style>
+.music-btn { position: fixed; right: 18px; bottom: 18px; z-index: 200; width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--gold); background: var(--bg-2); color: var(--gold); font-size: 1.3rem; cursor: pointer; box-shadow: var(--shadow); transition: .25s; }
+.music-btn:hover { background: var(--gold); transform: scale(1.08); }
+</style>
+<script>
+(function () {
+  var a = document.getElementById('bgm'), b = document.getElementById('bgmBtn');
+  var on = false, t = 0;
+  a.volume = 0.4;   /* kuat bunyi: 0 (senyap) hingga 1 (penuh) */
+  try { on = localStorage.getItem('bgmOn') === '1'; t = parseFloat(localStorage.getItem('bgmTime')) || 0; } catch (e) {}
+  function ui() { b.textContent = a.paused ? '🔇' : '🔊'; }
+  function save() { try { localStorage.setItem('bgmOn', a.paused ? '0' : '1'); localStorage.setItem('bgmTime', a.currentTime); } catch (e) {} }
+  function play() { var p = a.play(); if (p && p.catch) p.catch(function () {}); }
+  function seek() { if (t && a.duration && t < a.duration) a.currentTime = t; }
+  if (a.readyState >= 1) seek(); else a.addEventListener('loadedmetadata', seek);
+  if (on) {
+    play();
+    document.addEventListener('pointerdown', function (e) { if (on && a.paused && e.target !== b) play(); }, { once: true });
+  }
+  b.addEventListener('click', function () { if (a.paused) { play(); on = true; } else { a.pause(); on = false; } });
+  a.addEventListener('play', function () { ui(); save(); });
+  a.addEventListener('pause', function () { ui(); save(); });
+  setInterval(function () { if (!a.paused) save(); }, 1000);
+  window.addEventListener('pagehide', save);
+})();
+</script>
+<!-- ===== TAMAT: MUZIK LATAR ===== -->
+</body>
+</html>

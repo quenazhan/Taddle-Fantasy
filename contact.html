@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download & Contact — </title>
+<meta name="description" content="System requirements, developer profile and feedback form.">
+
+<!-- FONT: kalau tukar font, tukar nama di sini DAN di style.css (--font-head / --font-body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- WARNA: ubah di style.css (bahagian :root paling atas) -->
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!--
+  CARA EDIT:
+  - Tukar teks  : tukar terus tulisan antara tag, contoh <h2>The Story</h2>
+  - Tukar gambar: tukar nama dalam src="....jpg"  (gambar mesti dalam folder yang sama dengan fail ini)
+  - Buang bahagian: padam dari baris "MULA: ..." sampai "TAMAT: ..." (sebab semua bahagian berdiri sendiri)
+  - Jangan padam bahagian <script> di paling bawah
+-->
+<!-- ===== MULA: MENU ATAS ===== -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><img src="Gambar/logotitle.png" alt=""></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Download / Contact</a></li>
+    </ul>
+  </div>
+</header>
+<!-- ===== TAMAT: MENU ATAS ===== -->
+
+<main>
+
+<!-- ===== MULA: TAJUK HALAMAN ===== -->
+<section class="page-banner">
+  <div class="container">
+    <h1>Download &amp; Contact</h1>
+    <div class="divider"></div>
+    <p>Get the game, meet the developer and tell us what you think.</p>
+  </div>
+</section>
+<!-- ===== TAMAT: TAJUK HALAMAN ===== -->
+
+<section class="section" style="padding-top:40px">
+  <div class="container contact-grid">
+
+    <div>
+      <!-- ===== MULA: SYSTEM REQUIREMENTS + BUTANG DOWNLOAD ===== -->
+      <div class="panel reveal" id="download">
+        <h3>System Requirements</h3>
+        <table class="req">
+          <tr><th>OS</th><td>Windows 10 / 11 (64-bit) · Android 9+</td></tr>
+          <tr><th>Processor</th><td>Intel Core i3 / AMD Ryzen 3 or better</td></tr>
+          <tr><th>Memory</th><td>4 GB RAM</td></tr>
+          <tr><th>Graphics</th><td>GTX 650 / integrated GPU with OpenGL 3.3</td></tr>
+          <tr><th>Storage</th><td>2 GB available space</td></tr>
+        </table>
+        <div class="download-row">
+          <!-- Tukar href="#" kepada pautan download sebenar -->
+          <a href="#" class="btn btn-primary">⬇ Download Demo</a>
+          <a href="#" class="btn btn-ghost">Wishlist on Steam</a>
+        </div>
+      </div>
+      <!-- ===== TAMAT: SYSTEM REQUIREMENTS ===== -->
+
+      <!-- ===== MULA: PROFIL DEVELOPER ===== -->
+      <div class="panel reveal">
+        <h3>Developer Profile</h3>
+        <div class="dev">
+          <div class="ph" data-label="Foto"><img src="Gambar/logo.png" alt="Developer photo"></div>   <!-- gambar profil (petak 1:1) -->
+          <div>
+            <strong>Q'Studio</strong>
+            <p>Game designer, web developer, Graphic designer &amp; Animator. Taddle Fantasy is a 2D pixel rpg fantasy game that suits with all ages.</p>
+          </div>
+        </div>
+        <div class="socials">
+          <!-- Tukar href="#" kepada pautan akaun sebenar. Padam baris yang tak nak. -->
+          <a href="https://www.instagram.com/r4ida._?exln=MTY5bGtkYWZzOTQxaQ==" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://youtube.com/@qstudiomy?si=Y-hJLX5_-9jyB9Dx" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://discord.gg/CJV2EJH8" target="_blank" rel="noopener">Discord</a>
+        </div>
+      </div>
+      <!-- ===== TAMAT: PROFIL DEVELOPER ===== -->
+    </div>
+
+    <!-- ===== MULA: BORANG FEEDBACK (berfungsi bila di-deploy di Netlify) ===== -->
+    <div class="panel reveal">
+      <h3>Send Feedback</h3>
+      <form name="feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="feedback">
+        <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="type">Feedback type</label>
+        <select id="type" name="type">
+          <option>General feedback</option>
+          <option>Bug report</option>
+          <option>Character / story idea</option>
+          <option>Collaboration</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us what you think..." required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+    <!-- ===== TAMAT: BORANG FEEDBACK ===== -->
+
+  </div>
+</section>
+
+</main>
+
+<!-- ===== MULA: FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Download / Contact</a></li>
+    </ul>
+    <small>© 2026 Q'Studio. All rights reserved.</small>
+  </div>
+</footer>
+<!-- ===== TAMAT: FOOTER ===== -->
+
+<script>
+/* ----- JANGAN PADAM: skrip asas (menu mobile, placeholder gambar, animasi) ----- */
+(function () {
+  var t = document.querySelector('.nav-toggle'), n = document.querySelector('.nav-links');
+  if (t && n) t.addEventListener('click', function () { t.setAttribute('aria-expanded', n.classList.toggle('open')); });
+
+  document.querySelectorAll('.ph').forEach(function (box) {
+    var im = box.querySelector('img');
+    if (im && !box.dataset.label) box.dataset.label = im.getAttribute('src') || '';
+    if (im) {
+      var hide = function () { im.style.display = 'none'; };
+      im.addEventListener('error', hide);
+      if (im.complete && im.naturalWidth === 0) hide();
+    }
+  });
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); } });
+    }, { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('show'); });
+  }
+})();
+
+var lastFocus = null;
+function openModal(el) { lastFocus = document.activeElement; el.classList.add('open'); document.body.style.overflow = 'hidden'; var x = el.querySelector('.modal-close'); if (x) x.focus(); }
+function closeModal(el) { el.classList.remove('open'); document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); }
+function wireModals() {
+  document.querySelectorAll('.modal').forEach(function (m) {
+    m.addEventListener('click', function (e) { if (e.target === m) closeModal(m); });
+    var x = m.querySelector('.modal-close'); if (x) x.addEventListener('click', function () { closeModal(m); });
+  });
+  document.addEventListener('keydown', function (e) {
+    var o = document.querySelector('.modal.open'); if (!o) return;
+    if (e.key === 'Escape') closeModal(o);
+  });
+}
+function imgBox(src, alt) {
+  return '<div class="ph" data-label="' + src + '"><img src="' + src + '" alt="' + alt + '" onerror="this.style.display=\'none\'"></div>';
+}
+</script>
+
+<!-- ===== MULA: MUZIK LATAR ===== -->
+<!-- Tukar "music.mp3" kepada nama fail muzik kau (letak fail tu dalam folder yang sama dengan fail html) -->
+<audio id="bgm" src="music.mp3" loop preload="auto"></audio>
+<button id="bgmBtn" class="music-btn" aria-label="Toggle music">🔇</button>
+<style>
+.music-btn { position: fixed; right: 18px; bottom: 18px; z-index: 200; width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--gold); background: var(--bg-2); color: var(--gold); font-size: 1.3rem; cursor: pointer; box-shadow: var(--shadow); transition: .25s; }
+.music-btn:hover { background: var(--gold); transform: scale(1.08); }
+</style>
+<script>
+(function () {
+  var a = document.getElementById('bgm'), b = document.getElementById('bgmBtn');
+  var on = false, t = 0;
+  a.volume = 0.4;   /* kuat bunyi: 0 (senyap) hingga 1 (penuh) */
+  try { on = localStorage.getItem('bgmOn') === '1'; t = parseFloat(localStorage.getItem('bgmTime')) || 0; } catch (e) {}
+  function ui() { b.textContent = a.paused ? '🔇' : '🔊'; }
+  function save() { try { localStorage.setItem('bgmOn', a.paused ? '0' : '1'); localStorage.setItem('bgmTime', a.currentTime); } catch (e) {} }
+  function play() { var p = a.play(); if (p && p.catch) p.catch(function () {}); }
+  function seek() { if (t && a.duration && t < a.duration) a.currentTime = t; }
+  if (a.readyState >= 1) seek(); else a.addEventListener('loadedmetadata', seek);
+  if (on) {
+    play();
+    document.addEventListener('pointerdown', function (e) { if (on && a.paused && e.target !== b) play(); }, { once: true });
+  }
+  b.addEventListener('click', function () { if (a.paused) { play(); on = true; } else { a.pause(); on = false; } });
+  a.addEventListener('play', function () { ui(); save(); });
+  a.addEventListener('pause', function () { ui(); save(); });
+  setInterval(function () { if (!a.paused) save(); }, 1000);
+  window.addEventListener('pagehide', save);
+})();
+</script>
+<!-- ===== TAMAT: MUZIK LATAR ===== -->
+</body>
+</html>

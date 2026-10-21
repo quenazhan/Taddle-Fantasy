@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Characters — </title>
+<meta name="description" content="Meet the heroes of Taddle Fantasy.">
+
+<!-- FONT: kalau tukar font, tukar nama di sini DAN di style.css (--font-head / --font-body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- WARNA: ubah di style.css (bahagian :root paling atas) -->
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!--
+  CARA EDIT:
+  - Tukar teks  : tukar terus tulisan antara tag, contoh <h2>The Story</h2>
+  - Tukar gambar: tukar nama dalam src="....jpg"  (gambar mesti dalam folder yang sama dengan fail ini)
+  - Buang bahagian: padam dari baris "MULA: ..." sampai "TAMAT: ..." (sebab semua bahagian berdiri sendiri)
+  - Jangan padam bahagian <script> di paling bawah
+-->
+<!-- ===== MULA: MENU ATAS ===== -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><img src="Gambar/logotitle.png" alt=""></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="characters.html" class="active">Characters</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Download / Contact</a></li>
+    </ul>
+  </div>
+</header>
+<!-- ===== TAMAT: MENU ATAS ===== -->
+
+<main>
+
+<!-- ===== MULA: TAJUK HALAMAN ===== -->
+<section class="page-banner">
+  <div class="container">
+    <h1>The Heroes</h1>
+    <div class="divider"></div>
+    <p>Click a character card to open their full profile.</p>
+  </div>
+</section>
+<!-- ===== TAMAT: TAJUK HALAMAN ===== -->
+
+<!-- Nak TAMBAH watak? Copy satu blok watak (MULA sampai TAMAT), paste di bawah blok terakhir, tukar isi. -->
+<section class="section" style="padding-top:40px">
+  <div class="container grid-4">
+
+    <!-- ===== MULA: WATAK TADDLE (padam sampai TAMAT kalau tak nak) ===== -->
+    <article class="char-card reveal" tabindex="0" role="button" aria-label="Open Taddle profile">
+      <div class="ph"><img src="Gambar/sora.a.png" alt="Sora"></div>
+      <div class="char-info">
+        <h3>Sora</h3>
+        <span class="role">Main Protagonist</span>
+        <span class="hint">Click to view profile</span>
+      </div>
+
+      <!-- Maklumat dalam popup (tak nampak di kad, keluar bila diklik) -->
+      <div class="char-data" hidden>
+        <ul class="bio-list">
+          <li><span>Age</span>19 (spirit years)</li>
+          <li><span>Class</span>Knight</li>
+          <li><span>Origin</span>Taddle Kingdom</li>
+          <li><span>Weapon</span>Celestial Sword</li>
+        </ul>
+        <p class="bio">young knight with an unbreakable spirit, Sora sets out to protect his homeland and restore peace to the world.</p>
+        <div class="stat"><span>HP</span><div class="bar"><i style="width:70%"></i></div><span>70</span></div>
+        <div class="stat"><span>ATK</span><div class="bar"><i style="width:65%"></i></div><span>65</span></div>
+        <div class="stat"><span>DEF</span><div class="bar"><i style="width:50%"></i></div><span>50</span></div>
+        <div class="stat"><span>SPD</span><div class="bar"><i style="width:90%"></i></div><span>90</span></div>
+      </div>
+    </article>
+    <!-- ===== TAMAT: WATAK TADDLE ===== -->
+
+    <!-- ===== MULA: WATAK MIRA (padam sampai TAMAT kalau tak nak) ===== -->
+    <article class="char-card reveal" tabindex="0" role="button" aria-label="Open Mira profile">
+      <div class="ph"><img src="Gambar/eiko.a.png" alt="Eiko"></div>
+      <div class="char-info">
+        <h3>Eiko</h3>
+        <span class="role">Moonlight Mage</span>
+        <span class="hint">Click to view profile</span>
+      </div>
+
+      <!-- Maklumat dalam popup (tak nampak di kad, keluar bila diklik) -->
+      <div class="char-data" hidden>
+        <ul class="bio-list">
+          <li><span>Age</span>18</li>
+          <li><span>Class</span>Mage</li>
+          <li><span>Origin</span>Spirit Forest</li>
+          <li><span>Weapon</span>Arcane Staff</li>
+        </ul>
+        <p class="bio">A gifted young mage who seeks to uncover the secrets of ancient magic and uses her powers to protect her friends.</p>
+        <div class="stat"><span>HP</span><div class="bar"><i style="width:55%"></i></div><span>55</span></div>
+        <div class="stat"><span>ATK</span><div class="bar"><i style="width:85%"></i></div><span>85</span></div>
+        <div class="stat"><span>DEF</span><div class="bar"><i style="width:40%"></i></div><span>40</span></div>
+        <div class="stat"><span>SPD</span><div class="bar"><i style="width:70%"></i></div><span>70</span></div>
+      </div>
+    </article>
+    <!-- ===== TAMAT: WATAK MIRA ===== -->
+
+    <!-- ===== MULA: WATAK BROM (padam sampai TAMAT kalau tak nak) ===== -->
+    <article class="char-card reveal" tabindex="0" role="button" aria-label="Open Brom profile">
+      <div class="ph"><img src="Gambar/rin.a.png" alt="Rin"></div>
+      <div class="char-info">
+        <h3>Rin</h3>
+        <span class="role">Healer & Support</span>
+        <span class="hint">Click to view profile</span>
+      </div>
+
+      <!-- Maklumat dalam popup (tak nampak di kad, keluar bila diklik) -->
+      <div class="char-data" hidden>
+        <ul class="bio-list">
+          <li><span>Age</span>20</li>
+          <li><span>Class</span>Healer</li>
+          <li><span>Origin</span>Spirit Forest</li>
+          <li><span>Weapon</span>Blooming Staff</li>
+        </ul>
+        <p class="bio">A kind-hearted healer blessed with nature's magic, Rin joins the journey to heal the wounded and bring hope to others.</p>
+        <div class="stat"><span>HP</span><div class="bar"><i style="width:100%"></i></div><span>100</span></div>
+        <div class="stat"><span>ATK</span><div class="bar"><i style="width:55%"></i></div><span>55</span></div>
+        <div class="stat"><span>DEF</span><div class="bar"><i style="width:95%"></i></div><span>95</span></div>
+        <div class="stat"><span>SPD</span><div class="bar"><i style="width:30%"></i></div><span>30</span></div>
+      </div>
+    </article>
+    <!-- ===== TAMAT: WATAK BROM ===== -->
+
+    <!-- ===== MULA: WATAK VESPER (padam sampai TAMAT kalau tak nak) ===== -->
+    <article class="char-card reveal" tabindex="0" role="button" aria-label="Open Vesper profile">
+      <div class="ph"><img src="Gambar/yami.a.png" alt="Yami"></div>
+      <div class="char-info">
+        <h3>Yami</h3>
+        <span class="role">Main Antagonist</span>
+        <span class="hint">Click to view profile</span>
+      </div>
+
+      <!-- Maklumat dalam popup (tak nampak di kad, keluar bila diklik) -->
+      <div class="char-data" hidden>
+        <ul class="bio-list">
+          <li><span>Age</span>Unknown</li>
+          <li><span>Class</span>Demon Lord</li>
+          <li><span>Origin</span>Yami's Castle</li>
+          <li><span>Weapon</span>Crimson Dark Magic</li>
+        </ul>
+        <p class="bio">Once a powerful guardian, Yami was consumed by forbidden darkness and now seeks to rule the world with his terrifying power.</p>
+        <div class="stat"><span>HP</span><div class="bar"><i style="width:60%"></i></div><span>60</span></div>
+        <div class="stat"><span>ATK</span><div class="bar"><i style="width:95%"></i></div><span>95</span></div>
+        <div class="stat"><span>DEF</span><div class="bar"><i style="width:35%"></i></div><span>35</span></div>
+        <div class="stat"><span>SPD</span><div class="bar"><i style="width:100%"></i></div><span>100</span></div>
+      </div>
+    </article>
+    <!-- ===== TAMAT: WATAK VESPER ===== -->
+
+  </div>
+</section>
+
+<!-- ===== POPUP KAD WATAK (jangan padam) ===== -->
+<div class="modal" id="charModal" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Close">✕</button>
+    <div class="char-modal-body"></div>
+  </div>
+</div>
+
+</main>
+
+<!-- ===== MULA: FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Download / Contact</a></li>
+    </ul>
+    <small>© 2026 Q'Studio. All rights reserved.</small>
+  </div>
+</footer>
+<!-- ===== TAMAT: FOOTER ===== -->
+
+<script>
+/* ----- JANGAN PADAM: skrip asas (menu mobile, placeholder gambar, animasi) ----- */
+(function () {
+  var t = document.querySelector('.nav-toggle'), n = document.querySelector('.nav-links');
+  if (t && n) t.addEventListener('click', function () { t.setAttribute('aria-expanded', n.classList.toggle('open')); });
+
+  document.querySelectorAll('.ph').forEach(function (box) {
+    var im = box.querySelector('img');
+    if (im && !box.dataset.label) box.dataset.label = im.getAttribute('src') || '';
+    if (im) {
+      var hide = function () { im.style.display = 'none'; };
+      im.addEventListener('error', hide);
+      if (im.complete && im.naturalWidth === 0) hide();
+    }
+  });
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); } });
+    }, { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('show'); });
+  }
+})();
+
+var lastFocus = null;
+function openModal(el) { lastFocus = document.activeElement; el.classList.add('open'); document.body.style.overflow = 'hidden'; var x = el.querySelector('.modal-close'); if (x) x.focus(); }
+function closeModal(el) { el.classList.remove('open'); document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); }
+function wireModals() {
+  document.querySelectorAll('.modal').forEach(function (m) {
+    m.addEventListener('click', function (e) { if (e.target === m) closeModal(m); });
+    var x = m.querySelector('.modal-close'); if (x) x.addEventListener('click', function () { closeModal(m); });
+  });
+  document.addEventListener('keydown', function (e) {
+    var o = document.querySelector('.modal.open'); if (!o) return;
+    if (e.key === 'Escape') closeModal(o);
+  });
+}
+function imgBox(src, alt) {
+  return '<div class="ph" data-label="' + src + '"><img src="' + src + '" alt="' + alt + '" onerror="this.style.display=\'none\'"></div>';
+}
+
+/* ----- Popup kad watak ----- */
+wireModals();
+var charModal = document.getElementById('charModal');
+var charBody = charModal.querySelector('.char-modal-body');
+function openChar(card) {
+  var im = card.querySelector('img'), src = im ? im.getAttribute('src') : '';
+  var name = card.querySelector('h3').textContent, role = card.querySelector('.role').textContent;
+  var data = card.querySelector('.char-data');
+  charBody.innerHTML = imgBox(src, name) +
+    '<div class="char-detail"><h2>' + name + '</h2><p class="role">' + role + '</p>' +
+    (data ? data.innerHTML : '') +
+    '<a class="modal-link" href="gallery.html#turntable">View turnaround in Gallery →</a></div>';
+  openModal(charModal);
+}
+document.querySelectorAll('.char-card').forEach(function (card) {
+  card.addEventListener('click', function () { openChar(card); });
+  card.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openChar(card); } });
+});
+</script>
+
+<!-- ===== MULA: MUZIK LATAR ===== -->
+<!-- Tukar "music.mp3" kepada nama fail muzik kau (letak fail tu dalam folder yang sama dengan fail html) -->
+<audio id="bgm" src="music.mp3" loop preload="auto"></audio>
+<button id="bgmBtn" class="music-btn" aria-label="Toggle music">🔇</button>
+<style>
+.music-btn { position: fixed; right: 18px; bottom: 18px; z-index: 200; width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--gold); background: var(--bg-2); color: var(--gold); font-size: 1.3rem; cursor: pointer; box-shadow: var(--shadow); transition: .25s; }
+.music-btn:hover { background: var(--gold); transform: scale(1.08); }
+</style>
+<script>
+(function () {
+  var a = document.getElementById('bgm'), b = document.getElementById('bgmBtn');
+  var on = false, t = 0;
+  a.volume = 0.4;   /* kuat bunyi: 0 (senyap) hingga 1 (penuh) */
+  try { on = localStorage.getItem('bgmOn') === '1'; t = parseFloat(localStorage.getItem('bgmTime')) || 0; } catch (e) {}
+  function ui() { b.textContent = a.paused ? '🔇' : '🔊'; }
+  function save() { try { localStorage.setItem('bgmOn', a.paused ? '0' : '1'); localStorage.setItem('bgmTime', a.currentTime); } catch (e) {} }
+  function play() { var p = a.play(); if (p && p.catch) p.catch(function () {}); }
+  function seek() { if (t && a.duration && t < a.duration) a.currentTime = t; }
+  if (a.readyState >= 1) seek(); else a.addEventListener('loadedmetadata', seek);
+  if (on) {
+    play();
+    document.addEventListener('pointerdown', function (e) { if (on && a.paused && e.target !== b) play(); }, { once: true });
+  }
+  b.addEventListener('click', function () { if (a.paused) { play(); on = true; } else { a.pause(); on = false; } });
+  a.addEventListener('play', function () { ui(); save(); });
+  a.addEventListener('pause', function () { ui(); save(); });
+  setInterval(function () { if (!a.paused) save(); }, 1000);
+  window.addEventListener('pagehide', save);
+})();
+</script>
+<!-- ===== TAMAT: MUZIK LATAR ===== -->
+</body>
+</html>

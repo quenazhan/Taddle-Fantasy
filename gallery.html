@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media & Gallery — </title>
+<meta name="description" content="Trailer, concept art and character turnarounds.">
+
+<!-- FONT: kalau tukar font, tukar nama di sini DAN di style.css (--font-head / --font-body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- WARNA: ubah di style.css (bahagian :root paling atas) -->
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!--
+  CARA EDIT:
+  - Tukar teks  : tukar terus tulisan antara tag, contoh <h2>The Story</h2>
+  - Tukar gambar: tukar nama dalam src="....jpg"  (gambar mesti dalam folder yang sama dengan fail ini)
+  - Buang bahagian: padam dari baris "MULA: ..." sampai "TAMAT: ..." (sebab semua bahagian berdiri sendiri)
+  - Jangan padam bahagian <script> di paling bawah
+-->
+<!-- ===== MULA: MENU ATAS ===== -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><img src="Gambar/logotitle.png" alt=""></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Download / Contact</a></li>
+    </ul>
+  </div>
+</header>
+<!-- ===== TAMAT: MENU ATAS ===== -->
+
+<main>
+
+<!-- ===== MULA: TAJUK HALAMAN ===== -->
+<section class="page-banner">
+  <div class="container">
+    <h1>Media &amp; Gallery</h1>
+    <div class="divider"></div>
+    <p>Trailer, concept art and character turnarounds.</p>
+  </div>
+</section>
+<!-- ===== TAMAT: TAJUK HALAMAN ===== -->
+
+
+<!-- ===== MULA: VIDEO ===== -->
+<section class="section" id="trailer" style="padding-bottom:40px">
+  <div class="container">
+    <div class="section-head reveal"><h2>Official Trailer</h2><div class="divider"></div></div>
+    <div class="video-wrap reveal">
+
+      <!-- TAMPAL PAUTAN YOUTUBE KAU dalam data-youtube="..." (pautan biasa pun boleh: youtu.be/... atau youtube.com/watch?v=...)
+           Kalau guna fail video sendiri: kosongkan data-youtube dan isi data-video="trailer.mp4" -->
+      <div class="video-frame" id="videoFrame" data-youtube="https://youtu.be/kbDp_pMGJIk?si=tH3sepvYeIH-zI6G" data-video=""></div>
+
+      <p style="text-align:center;margin-top:12px"><a id="videoLink" href="#" target="_blank" rel="noopener">▶ Watch on YouTube</a></p>
+    </div>
+  </div>
+</section>
+<!-- ===== TAMAT: VIDEO ===== -->
+
+
+<!-- ===== MULA: 4 BACKGROUND KONSEP ===== -->
+<section class="section" id="concepts" style="padding-bottom:40px">
+  <div class="container">
+    <div class="section-head reveal"><h2>Background Concepts</h2><div class="divider"></div><p>Click an image to enlarge.</p></div>
+    <div class="grid-2x2">
+      <!-- MULA: KONSEP 1 -->
+      <button class="shot reveal" data-caption="Taddle Kingdom">
+        <div class="ph"><img src="Gambar/tk.png" alt="Taddle Kingdom"></div>
+        <span class="cap">Taddle Kingdom</span>
+      </button>
+      <!-- TAMAT: KONSEP 1 -->
+      <!-- MULA: KONSEP 2 -->
+      <button class="shot reveal" data-caption="Spirit Forest">
+        <div class="ph"><img src="Gambar/sf.png" alt="Spirit Forest"></div>
+        <span class="cap">Spirit Forest</span>
+      </button>
+      <!-- TAMAT: KONSEP 2 -->
+      <!-- MULA: KONSEP 3 -->
+      <button class="shot reveal" data-caption="Frost Peaks">
+        <div class="ph"><img src="Gambar/fp.png" alt="Frost Peaks"></div>
+        <span class="cap">Frost Peaks</span>
+      </button>
+      <!-- TAMAT: KONSEP 3 -->
+      <!-- MULA: KONSEP 4 -->
+      <button class="shot reveal" data-caption="Yami's Castle">
+        <div class="ph"><img src="Gambar/yc.png" alt="Yami's Castle"></div>
+        <span class="cap">Yami's Castle</span>
+      </button>
+      <!-- TAMAT: KONSEP 4 -->
+    </div>
+  </div>
+</section>
+<!-- ===== TAMAT: 4 BACKGROUND KONSEP ===== -->
+
+
+<!-- ===== MULA: 4 ICON WATAK (klik = turnaround spin) ===== -->
+<section class="section" id="turntable">
+  <div class="container">
+    <div class="section-head reveal"><h2>Character Turnarounds</h2><div class="divider"></div><p>Click an icon, then drag your mouse left or right to spin the character.</p></div>
+    <div class="icon-grid">
+      <!-- MULA: ICON TADDLE -->
+      <!-- data-frames = senarai gambar turnaround ikut urutan putaran, asing dengan koma. Boleh 4, 6, 8 gambar. -->
+      <button class="icon-item reveal" data-name="Sora" data-frames="Gambar/sora.t.b.png,Gambar/sora.t.l.png,Gambar/sora.t.f.png">
+        <div class="ph"><img src="Gambar/sora.c.png" alt="Sora"></div>
+        <strong>Sora</strong><small>Knight</small>
+      </button>
+      <!-- TAMAT: ICON TADDLE -->
+      <!-- MULA: ICON MIRA -->
+      <!-- data-frames = senarai gambar turnaround ikut urutan putaran, asing dengan koma. Boleh 4, 6, 8 gambar. -->
+      <button class="icon-item reveal" data-name="Eiko" data-frames="Gambar/eiko.t.b.png,Gambar/eiko.t.l.png,Gambar/eiko.t.f.png">
+        <div class="ph"><img src="Gambar/eiko.c.png" alt="Eiko"></div>
+        <strong>Eiko</strong><small>Mage</small>
+      </button>
+      <!-- TAMAT: ICON MIRA -->
+      <!-- MULA: ICON BROM -->
+      <!-- data-frames = senarai gambar turnaround ikut urutan putaran, asing dengan koma. Boleh 4, 6, 8 gambar. -->
+      <button class="icon-item reveal" data-name="Rin" data-frames="Gambar/rin.t.b.png,Gambar/rin.t.l.png,Gambar/rin.t.f.png">
+        <div class="ph"><img src="Gambar/rin.c.png" alt="Rin"></div>
+        <strong>Rin</strong><small>Healer</small>
+      </button>
+      <!-- TAMAT: ICON BROM -->
+      <!-- MULA: ICON VESPER -->
+      <!-- data-frames = senarai gambar turnaround ikut urutan putaran, asing dengan koma. Boleh 4, 6, 8 gambar. -->
+      <button class="icon-item reveal" data-name="Yami" data-frames="Gambar/yami.t.b.png,Gambar/yami.t.l.png,Gambar/yami.t.f.png">
+        <div class="ph"><img src="Gambar/yami.c.png" alt="Yami"></div>
+        <strong>Yami</strong><small>Demon Lord</small>
+      </button>
+      <!-- TAMAT: ICON VESPER -->
+    </div>
+  </div>
+</section>
+<!-- ===== TAMAT: 4 ICON WATAK ===== -->
+
+
+<!-- ===== POPUP (jangan padam) ===== -->
+<div class="modal" id="turnModal" role="dialog" aria-modal="true" aria-label="Character turnaround">
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Close">✕</button>
+    <div class="carousel-box">
+      <h2 class="turn-name"></h2>
+      <p class="view-label"></p>
+      <div class="stage"><div class="spin ph" data-label="Turnaround"></div></div>
+      <p class="spin-hint">⟵ Drag with your mouse to spin ⟶</p>
+      <div class="dots" aria-hidden="true"></div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="lightbox" role="dialog" aria-modal="true" aria-label="Concept art">
+  <div class="modal-box lightbox-box">
+    <button class="modal-close" aria-label="Close">✕</button>
+    <div class="lb-holder"></div>
+    <p class="lb-cap"></p>
+  </div>
+</div>
+
+</main>
+
+<!-- ===== MULA: FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Download / Contact</a></li>
+    </ul>
+    <small>© 2026 Q'Studio. All rights reserved.</small>
+  </div>
+</footer>
+<!-- ===== TAMAT: FOOTER ===== -->
+
+<script>
+/* ----- JANGAN PADAM: skrip asas (menu mobile, placeholder gambar, animasi) ----- */
+(function () {
+  var t = document.querySelector('.nav-toggle'), n = document.querySelector('.nav-links');
+  if (t && n) t.addEventListener('click', function () { t.setAttribute('aria-expanded', n.classList.toggle('open')); });
+
+  document.querySelectorAll('.ph').forEach(function (box) {
+    var im = box.querySelector('img');
+    if (im && !box.dataset.label) box.dataset.label = im.getAttribute('src') || '';
+    if (im) {
+      var hide = function () { im.style.display = 'none'; };
+      im.addEventListener('error', hide);
+      if (im.complete && im.naturalWidth === 0) hide();
+    }
+  });
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); } });
+    }, { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('show'); });
+  }
+})();
+
+var lastFocus = null;
+function openModal(el) { lastFocus = document.activeElement; el.classList.add('open'); document.body.style.overflow = 'hidden'; var x = el.querySelector('.modal-close'); if (x) x.focus(); }
+function closeModal(el) { el.classList.remove('open'); document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); }
+function wireModals() {
+  document.querySelectorAll('.modal').forEach(function (m) {
+    m.addEventListener('click', function (e) { if (e.target === m) closeModal(m); });
+    var x = m.querySelector('.modal-close'); if (x) x.addEventListener('click', function () { closeModal(m); });
+  });
+  document.addEventListener('keydown', function (e) {
+    var o = document.querySelector('.modal.open'); if (!o) return;
+    if (e.key === 'Escape') closeModal(o);
+  });
+}
+function imgBox(src, alt) {
+  return '<div class="ph" data-label="' + src + '"><img src="' + src + '" alt="' + alt + '" onerror="this.style.display=\'none\'"></div>';
+}
+
+/* ----- Tetapan turntable ----- */
+var PX_PER_FRAME = 60;   /* kecil = spin lebih laju */
+var VIEW_LABELS = ['Back View', 'Side View', 'Front View'];   /* nama setiap gambar ikut urutan */
+
+wireModals();
+
+/* Lightbox konsep */
+var lightbox = document.getElementById('lightbox');
+document.querySelectorAll('.shot').forEach(function (s) {
+  s.addEventListener('click', function () {
+    var im = s.querySelector('img'), src = im ? im.getAttribute('src') : '', cap = s.dataset.caption || '';
+    lightbox.querySelector('.lb-holder').innerHTML = imgBox(src, cap);
+    lightbox.querySelector('.lb-cap').textContent = cap;
+    openModal(lightbox);
+  });
+});
+
+/* Turntable: drag mouse untuk pusing */
+var turnModal = document.getElementById('turnModal');
+var spin = turnModal.querySelector('.spin');
+var slideIndex = 0, frames = 0, dragging = false, startX = 0, startIndex = 0;
+function renderSlide() {
+  spin.querySelectorAll('img').forEach(function (im, i) { im.classList.toggle('on', i === slideIndex); });
+  turnModal.querySelector('.view-label').textContent = VIEW_LABELS[slideIndex] || ('View ' + (slideIndex + 1));
+  turnModal.querySelectorAll('.dots button').forEach(function (d, i) { d.classList.toggle('on', i === slideIndex); });
+}
+spin.addEventListener('pointerdown', function (e) { dragging = true; startX = e.clientX; startIndex = slideIndex; spin.setPointerCapture(e.pointerId); spin.classList.add('dragging'); });
+spin.addEventListener('pointermove', function (e) {
+  if (!dragging || !frames) return;
+  var steps = Math.trunc((e.clientX - startX) / PX_PER_FRAME);
+  var next = (((startIndex + steps) % frames) + frames) % frames;
+  if (next !== slideIndex) { slideIndex = next; renderSlide(); }
+});
+function stopDrag() { dragging = false; spin.classList.remove('dragging'); }
+spin.addEventListener('pointerup', stopDrag);
+spin.addEventListener('pointercancel', stopDrag);
+spin.addEventListener('dragstart', function (e) { e.preventDefault(); });
+document.addEventListener('keydown', function (e) {
+  if (!turnModal.classList.contains('open') || !frames) return;
+  if (e.key === 'ArrowRight') { slideIndex = (slideIndex + 1) % frames; renderSlide(); }
+  if (e.key === 'ArrowLeft')  { slideIndex = (slideIndex - 1 + frames) % frames; renderSlide(); }
+});
+document.querySelectorAll('.icon-item').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var list = (b.dataset.frames || '').split(',').map(function (s) { return s.trim(); }).filter(Boolean);
+    frames = list.length; slideIndex = 0;
+    turnModal.querySelector('.turn-name').textContent = (b.dataset.name || '') + ' — Turnaround';
+    spin.innerHTML = list.map(function (src, i) { return '<img src="' + src + '" alt="view ' + (i + 1) + '" draggable="false" onerror="this.style.visibility=\'hidden\'">'; }).join('');
+    turnModal.querySelector('.dots').innerHTML = list.map(function () { return '<button></button>'; }).join('');
+    renderSlide(); openModal(turnModal);
+  });
+});
+
+</script>
+
+<script>
+/* ----- Video trailer: tampal pautan YouTube dalam data-youtube (bahagian VIDEO di atas) ----- */
+(function () {
+  var box = document.getElementById('videoFrame'); if (!box) return;
+  var link = document.getElementById('videoLink');
+  var url = (box.dataset.youtube || '').trim(), file = (box.dataset.video || '').trim();
+  function hideLink() { if (link) link.style.display = 'none'; }
+  if (file) { box.innerHTML = '<video controls preload="metadata" src="' + file + '"></video>'; hideLink(); return; }
+  var m = url.match(/(?:youtu\.be\/|[?&]v=|\/embed\/|\/shorts\/|\/live\/)([A-Za-z0-9_-]{11})/);
+  if (!m) { box.innerHTML = '<div class="ph" style="position:absolute;inset:0" data-label="Tampal pautan YouTube dalam data-youtube"></div>'; hideLink(); return; }
+  if (location.protocol === 'file:') {
+    /* Dibuka terus dari komputer: YouTube sekat embed, jadi tunjuk thumbnail + butang main yang buka YouTube */
+    box.innerHTML = '<a href="https://youtu.be/' + m[1] + '" target="_blank" rel="noopener" style="position:absolute;inset:0;display:block;background:#000">' +
+      '<img src="https://img.youtube.com/vi/' + m[1] + '/hqdefault.jpg" alt="Trailer" style="width:100%;height:100%;object-fit:cover">' +
+      '<span style="position:absolute;inset:0;display:grid;place-items:center;font-size:4.5rem;color:#fff;text-shadow:0 4px 24px #000">▶</span></a>';
+    if (link) link.textContent = '▶ Watch the trailer on YouTube';
+    if (link) link.href = 'https://youtu.be/' + m[1];
+    return;
+  }
+  box.innerHTML = '<iframe src="https://www.youtube.com/embed/' + m[1] + '?rel=0" title="Trailer" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  if (link) link.href = 'https://youtu.be/' + m[1];
+})();
+</script>
+
+<!-- ===== MULA: MUZIK LATAR ===== -->
+<!-- Tukar "music.mp3" kepada nama fail muzik kau (letak fail tu dalam folder yang sama dengan fail html) -->
+<audio id="bgm" src="music.mp3" loop preload="auto"></audio>
+<button id="bgmBtn" class="music-btn" aria-label="Toggle music">🔇</button>
+<style>
+.music-btn { position: fixed; right: 18px; bottom: 18px; z-index: 200; width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--gold); background: var(--bg-2); color: var(--gold); font-size: 1.3rem; cursor: pointer; box-shadow: var(--shadow); transition: .25s; }
+.music-btn:hover { background: var(--gold); transform: scale(1.08); }
+</style>
+<script>
+(function () {
+  var a = document.getElementById('bgm'), b = document.getElementById('bgmBtn');
+  var on = false, t = 0;
+  a.volume = 0.4;   /* kuat bunyi: 0 (senyap) hingga 1 (penuh) */
+  try { on = localStorage.getItem('bgmOn') === '1'; t = parseFloat(localStorage.getItem('bgmTime')) || 0; } catch (e) {}
+  function ui() { b.textContent = a.paused ? '🔇' : '🔊'; }
+  function save() { try { localStorage.setItem('bgmOn', a.paused ? '0' : '1'); localStorage.setItem('bgmTime', a.currentTime); } catch (e) {} }
+  function play() { var p = a.play(); if (p && p.catch) p.catch(function () {}); }
+  function seek() { if (t && a.duration && t < a.duration) a.currentTime = t; }
+  if (a.readyState >= 1) seek(); else a.addEventListener('loadedmetadata', seek);
+  if (on) {
+    play();
+    document.addEventListener('pointerdown', function (e) { if (on && a.paused && e.target !== b) play(); }, { once: true });
+  }
+  b.addEventListener('click', function () { if (a.paused) { play(); on = true; } else { a.pause(); on = false; } });
+  a.addEventListener('play', function () { ui(); save(); });
+  a.addEventListener('pause', function () { ui(); save(); });
+  setInterval(function () { if (!a.paused) save(); }, 1000);
+  window.addEventListener('pagehide', save);
+})();
+</script>
+<!-- ===== TAMAT: MUZIK LATAR ===== -->
+</body>
+</html>
