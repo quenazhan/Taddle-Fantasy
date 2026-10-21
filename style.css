@@ -2,11 +2,11 @@
    TADDLE FANTASY - style.css
    ---------------------------------------------------------------------
    1) WARNA & FONT: Ubah di bahagian ":root" paling atas
-   2) Selebihnya gaya susun atur.
+   2) Selebihnya gaya susun atur & animasi hover.
    ===================================================================== */
 
 :root {
-  /* ----- WARNA (kod hex) ----- */
+  /* ----- WARNA (Kod Hex) ----- */
   --bg: #0e0a1f;          /* Latar belakang utama */
   --bg-2: #150f2e;        /* Latar belakang kedua */
   --surface: #1c1540;     /* Warna kad / panel */
@@ -27,7 +27,7 @@
 }
 
 /* =====================================================================
-   GLOBAL STYLES
+   1. GLOBAL STYLES
    ===================================================================== */
 
 *,
@@ -64,6 +64,7 @@ img {
 a {
   color: var(--teal);
   text-decoration: none;
+  transition: 0.25s;
 }
 
 a:hover {
@@ -108,7 +109,7 @@ h2 {
   background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
 
-/* Petak gambar placeholder */
+/* Petak Gambar Placeholder */
 .ph {
   position: relative;
   background: linear-gradient(135deg, var(--surface-2), var(--surface));
@@ -139,7 +140,7 @@ h2 {
 
 
 /* =====================================================================
-   NAVIGASI
+   2. NAVIGASI
    ===================================================================== */
 
 .site-header {
@@ -186,7 +187,6 @@ h2 {
   color: var(--text);
   font-weight: 500;
   font-size: 0.95rem;
-  transition: 0.25s;
 }
 
 .nav-links a:hover {
@@ -213,7 +213,7 @@ h2 {
 
 
 /* =====================================================================
-   BUTANG
+   3. BUTANG (BUTTONS)
    ===================================================================== */
 
 .btn {
@@ -253,7 +253,7 @@ h2 {
 
 
 /* =====================================================================
-   HERO SECTION
+   4. HERO SECTION
    ===================================================================== */
 
 .hero {
@@ -319,7 +319,7 @@ h2 {
 
 
 /* =====================================================================
-   CERITA & FEATURES
+   5. CERITA & FEATURES
    ===================================================================== */
 
 .split {
@@ -359,6 +359,7 @@ h2 {
   color: var(--teal);
   font-size: 0.85rem;
   font-weight: 600;
+  transition: 0.25s;
 }
 
 .alt-band {
@@ -388,6 +389,7 @@ h2 {
 .feature .icon {
   font-size: 2.4rem;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
 }
 
 .feature h3 {
@@ -414,7 +416,7 @@ h2 {
 
 
 /* =====================================================================
-   WATAK & MODAL
+   6. WATAK & MODAL
    ===================================================================== */
 
 .page-banner {
@@ -614,7 +616,7 @@ h2 {
 
 
 /* =====================================================================
-   GALLERY & TURNTABLE
+   7. GALLERY & TURNTABLE
    ===================================================================== */
 
 .video-wrap {
@@ -733,7 +735,7 @@ h2 {
   color: var(--muted);
 }
 
-/* Turntable spin & lightbox */
+/* Turntable Spin & Lightbox */
 .carousel-box {
   padding: 30px 24px 24px;
   text-align: center;
@@ -832,7 +834,7 @@ h2 {
 
 
 /* =====================================================================
-   DOWNLOAD / CONTACT
+   8. DOWNLOAD / CONTACT
    ===================================================================== */
 
 .contact-grid {
@@ -846,12 +848,11 @@ h2 {
   border: 1px solid #ffffff12;
   border-radius: var(--radius);
   padding: 30px 28px;
+  transition: border-color 0.3s;
 }
 
-.panel h3 {
-  color: var(--gold);
-  margin-bottom: 14px;
-  font-size: 1.3rem;
+.panel:hover {
+  border-color: var(--gold);
 }
 
 .panel + .panel {
@@ -914,11 +915,13 @@ h2 {
   background: var(--surface-2);
   font-size: 0.88rem;
   font-weight: 600;
+  transition: 0.25s;
 }
 
 .socials a:hover {
   background: var(--gold);
   color: var(--on-accent);
+  transform: translateY(-3px);
 }
 
 form label {
@@ -967,7 +970,7 @@ form .btn {
 
 
 /* =====================================================================
-   FOOTER & ANIMATIONS
+   9. FOOTER & ANIMATIONS (REVEAL)
    ===================================================================== */
 
 .site-footer {
@@ -1000,7 +1003,7 @@ form .btn {
   display: block;
 }
 
-/* Animasi muncul (reveal) */
+/* Animasi Muncul (Reveal) */
 .js .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -1010,11 +1013,104 @@ form .btn {
 .js .reveal.show {
   opacity: 1;
   transform: none;
+  transition: opacity 0.7s, transform 0.3s, border-color 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
 
 /* =====================================================================
-   MEDIA QUERIES (RESPONSIVE DESIGN)
+   10. HOVER EXTRA & TOUCH EFFECTS
+   ===================================================================== */
+
+/* Gambar Zum Semasa Hover */
+.char-card .ph img,
+.shot .ph img,
+.split .ph img {
+  transition: transform 0.5s ease;
+}
+
+@media (hover: hover) {
+  .js .reveal.show.char-card:hover,
+  .js .reveal.show.char-card:focus-visible {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+    box-shadow: 0 14px 34px rgba(245, 196, 81, 0.25);
+  }
+  
+  .js .reveal.show.feature:hover {
+    transform: translateY(-6px);
+    border-color: var(--gold);
+    box-shadow: 0 14px 34px rgba(245, 196, 81, 0.18);
+  }
+  
+  .js .reveal.show.shot:hover,
+  .js .reveal.show.shot:focus-visible {
+    transform: scale(1.02);
+    border-color: var(--gold);
+    box-shadow: 0 12px 30px rgba(245, 196, 81, 0.2);
+  }
+
+  .char-card:hover .ph img,
+  .shot:hover .ph img { 
+    transform: scale(1.08); 
+  }
+  
+  .split .ph:hover img { 
+    transform: scale(1.04); 
+  }
+  
+  .feature:hover .icon { 
+    transform: scale(1.2) rotate(-6deg); 
+  }
+
+  .btn-primary:hover { 
+    box-shadow: 0 0 26px rgba(245, 196, 81, 0.55), var(--shadow); 
+  }
+  
+  .chip:hover { 
+    background: var(--teal); 
+    color: var(--bg); 
+    transform: translateY(-2px); 
+  }
+}
+
+/* Kesan Sentuhan (Touch) untuk Peranti Mudah Alih */
+@media (hover: none) {
+  .btn:active,
+  .js .reveal.show.char-card:active,
+  .js .reveal.show.feature:active,
+  .js .reveal.show.shot:active,
+  .icon-item:active { 
+    transform: scale(0.97); 
+  }
+}
+
+/* Butang Muzik Terapung */
+.music-btn { 
+  position: fixed; 
+  right: 18px; 
+  bottom: 18px; 
+  z-index: 200; 
+  width: 48px; 
+  height: 48px; 
+  border-radius: 50%; 
+  border: 2px solid var(--gold); 
+  background: var(--bg-2); 
+  color: var(--gold); 
+  font-size: 1.3rem; 
+  cursor: pointer; 
+  box-shadow: var(--shadow); 
+  transition: 0.25s; 
+}
+
+.music-btn:hover { 
+  background: var(--gold); 
+  color: var(--on-accent);
+  transform: scale(1.08); 
+}
+
+
+/* =====================================================================
+   11. MEDIA QUERIES (RESPONSIVE DESIGN)
    ===================================================================== */
 
 @media (max-width: 960px) {
@@ -1059,5 +1155,3 @@ form .btn {
   * { animation: none !important; transition: none !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
-.music-btn { position: fixed; right: 18px; bottom: 18px; z-index: 200; width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--gold); background: var(--bg-2); color: var(--gold); font-size: 1.3rem; cursor: pointer; box-shadow: var(--shadow); transition: .25s; }
-.music-btn:hover { background: var(--gold); transform: scale(1.08); }
